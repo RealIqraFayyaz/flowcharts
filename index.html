@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Chart Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Dashboard with Charts 📊</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" id="label-input" placeholder="Enter label (e.g., Jan)">
+      <input type="number" id="value-input" placeholder="Enter value">
+      <button id="add-data">Add Data</button>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <div class="chart-container">
+        <h2>Bar Chart</h2>
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h2>Line Chart</h2>
+        <canvas id="lineChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h2>Pie Chart</h2>
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
